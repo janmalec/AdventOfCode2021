@@ -1,0 +1,17 @@
+[package]
+name = "dec_5"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "day5_1"
+path = "src/day5_1.rs"
+
+[[bin]]
+name = "day5_2"
+path = "src/day5_2.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+matrix = "*"
