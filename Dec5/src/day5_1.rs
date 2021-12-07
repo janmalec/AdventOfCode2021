@@ -18,8 +18,8 @@ fn main() {
     for line in stdin.lock().lines() {
         let ln = line.unwrap();
         let coords = ln.replace("->", ",");
-        let numStr: Vec<String> = coords.split(",").map(|x| x.trim().to_string()).collect();
-        let n: Vec<usize> = numStr.iter().map(|x| x.parse::<usize>().unwrap()).collect();
+        let num_str: Vec<String> = coords.split(",").map(|x| x.trim().to_string()).collect();
+        let n: Vec<usize> = num_str.iter().map(|x| x.parse::<usize>().unwrap()).collect();
         lines.push(Line{p1: Point{x: n[0], y: n[1]}, p2: Point{x: n[2], y: n[3]}});
         max.x = cmp::max(max.x, n[0]);
         max.x = cmp::max(max.x, n[2]);
