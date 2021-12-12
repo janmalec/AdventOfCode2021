@@ -1,0 +1,16 @@
+[package]
+name = "dec8_1"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "day8_1"
+path = "src/day8_1.rs"
+
+[[bin]]
+name = "day8_2"
+path = "src/day8_2.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
